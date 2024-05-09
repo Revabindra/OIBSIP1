@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+body{
+    background-color: rgb(236, 229, 229);
+
+}
+.main{
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    height: auto;
+    margin-top: 10px;
+    background-color:rgb(250, 245, 245);
+    border: 2px solid rgba(240, 235, 235, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+.main .box{
+    width: 100%;
+    padding: 20px;
+    border :0;
+}
+.main .box h1 {
+    text-align: center;
+}
+.box img{
+    padding-left: 40%;
+    height: 25%;
+    width: 25%;
+    margin-bottom: 30px;
+    /* filter:invert(1); */
+}
+.logo {
+    width: 40%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.input-box{
+    position: relative;
+    width:100%;
+    height: 40px;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    margin:20px 0;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    color:rgba(20, 17, 17, 0.7);
+    pointer-events: none;
+    text-decoration: none;
+    transition: 0.3s;  
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    color: rgb(83, 80, 80);
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(20, 20, 20);
+    border:2px
+}
+.remember{
+    font-size: .9em;
+    color:rgb(7, 7, 7);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+} 
+.remember label input{
+    accent-color: rgb(26, 24, 24);
+    margin-right: 3px;
+}
+.remember a{
+    color:rgb(8, 8, 8);
+    text-decoration: none;
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+.up .btn{
+    width: 90%;
+    height: 35px;
+    margin-left: 15px;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1a1919;
+    font-weight: 500;
+}
+.popup{
+    width: 300px;
+    height: auto;
+    background: rgb(231, 227, 227);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 10px 10px;
+    color: rgb(27, 25, 25);
+    visibility: hidden;
+    transition: transform 0.4s , top 0.4s;
+}
+.popup img{
+    width: 50px;
+    margin-right: 20px;
+    padding-left: 15px; 
+   margin-bottom: 0;
+}
+.popup h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin:0;
+    color:#161616
+}
+.popup p{
+    margin-top: 0;
+}
+.popup button{
+    width: 80%;
+    /* margin-top: 5px; */
+    padding: 7px 0;
+    /* background: #6fd649; */
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(177, 174, 174, 0.2);
+}
+.main h4{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-weight: lighter;
+}
+.sign , .sign2 , .sign3{
+    margin: 10px;
+    width:220px;
+    height: 40px;
+    margin-left: 70px;
+}
+.sign .btn{
+    width: 215px;
+    height: 35px;
+    flex-direction: column;
+    margin:0;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: .9em;
+    color: #fff;
+    font-weight:200;
+}
+.sign .btn img{
+    width: 25px;
+    height:25px;
+    padding-top: 10px;
+    padding: 1px;
+    margin-bottom: 30px;
+    margin-top: 4px;
+    margin-left: 10px;
+   
+}
+.sign .btn span{
+    font-weight: lighter;
+    color: black;
+    position: relative;
+    padding-top: 8px;
+    padding-right: 8px;
+    float:right;
+    margin-left: 10px;
+}
+ .sign2 .btn{
+    width: 215px;
+    height: 35px;
+    flex-direction: column;
+    margin:0;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 20px;  
+    cursor: pointer;
+    font-size: .9em;
+    color: #fff;
+    font-weight:200;
+} 
+.sign2 .btn img{
+    width: 25px;
+    height:25px;
+    padding-top: 30px;
+    padding: 1px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-left: 10px;  
+}
+.sign2 .btn span{
+    font-weight: lighter;
+    /* border:2px solid red; */
+    color: black;
+    position: relative;
+    padding-top: 8px;
+    padding-right: 8px;
+    float:right;
+    margin-left: 10px;
+}
+.sign .btn, .sign2 .btn {
+    transition: background-color 0.3s;
+}
